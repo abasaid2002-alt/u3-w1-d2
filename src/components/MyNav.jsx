@@ -9,7 +9,7 @@ const MyNav = function (props) {
         <Navbar.Brand href="#home">{props.title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-2">
             {props.links.map((link) => (
               <Nav.Link key={link.text} href={link.href}>
                 {link.text}

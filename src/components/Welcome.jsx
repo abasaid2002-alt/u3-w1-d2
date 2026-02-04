@@ -1,7 +1,9 @@
-import Alert from "react-bootstrap/Alert"
+import { Alert } from "react-bootstrap"
 
-function Welcome(props) {
-  return <Alert variant="dark">{props.subtitle}</Alert>
-}
+const Welcome = () => (
+  <Alert className="text-center">
+    <h1>Benvenuti in EpiBooks!</h1>
+  </Alert>
+)
 
 export default Welcome
