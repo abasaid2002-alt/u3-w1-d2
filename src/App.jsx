@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
+
 import Container from "react-bootstrap/Container"
 import MyNav from "./components/MyNav"
 import Welcome from "./components/Welcome"
@@ -22,6 +23,7 @@ function App() {
       <Welcome subtitle="Qui trovi i tuoi libri fantasy preferiti." />
 
       <Container className="my-4">
+        {/* Passo l'array di libri a BookList */}
         <BookList books={fantasyBooks} />
       </Container>
 
