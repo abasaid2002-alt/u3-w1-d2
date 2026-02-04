@@ -2,8 +2,10 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Container from "react-bootstrap/Container"
 import MyNav from "./components/MyNav"
 import Welcome from "./components/Welcome"
-import AllTheBooks from "./components/AllTheBooks"
 import MyFooter from "./components/MyFooter"
+import BookList from "./components/BookList"
+
+import fantasyBooks from "./data/fantasy.json"
 
 function App() {
   return (
@@ -16,10 +18,11 @@ function App() {
           { text: "Browse", href: "#browse" },
         ]}
       />
-      <Welcome subtitle="Benvenuto su EpiBooks! Qui trovi i tuoi libri fanstasy preferiti." />
+
+      <Welcome subtitle="Qui trovi i tuoi libri fantasy preferiti." />
 
       <Container className="my-4">
-        <AllTheBooks />
+        <BookList books={fantasyBooks} />
       </Container>
 
       <MyFooter />
